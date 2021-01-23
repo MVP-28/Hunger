@@ -1,0 +1,35 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %montserrat-700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background: $accent;
+  bottom: -20px;
+  left: 68px;
+  border-radius: 50px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 28px;
+  @extend %opensans-400;
+}
